@@ -16,5 +16,13 @@
     {"name":"Sons","order":3,"path":"folders/Sons.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
   ],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"spr_player_andando_cima","order":1,"path":"sprites/spr_player_andando_cima/spr_player_andando_cima.yy",},
+    {"name":"spr_player_andando_direita","order":2,"path":"sprites/spr_player_andando_direita/spr_player_andando_direita.yy",},
+    {"name":"spr_player_andando_esquerda","order":3,"path":"sprites/spr_player_andando_esquerda/spr_player_andando_esquerda.yy",},
+    {"name":"spr_player_parado_baixo","order":4,"path":"sprites/spr_player_parado_baixo/spr_player_parado_baixo.yy",},
+    {"name":"spr_player_parado_cima","order":5,"path":"sprites/spr_player_parado_cima/spr_player_parado_cima.yy",},
+    {"name":"spr_player_parado_direita","order":6,"path":"sprites/spr_player_parado_direita/spr_player_parado_direita.yy",},
+    {"name":"spr_player_parado_esquerda","order":7,"path":"sprites/spr_player_parado_esquerda/spr_player_parado_esquerda.yy",},
+  ],
 }
