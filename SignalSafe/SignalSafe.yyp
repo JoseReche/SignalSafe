@@ -34,6 +34,7 @@
   },
   "name":"SignalSafe",
   "resources":[
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"spr_player_andando_baixo","path":"sprites/spr_player_andando_baixo/spr_player_andando_baixo.yy",},},
     {"id":{"name":"spr_player_andando_cima","path":"sprites/spr_player_andando_cima/spr_player_andando_cima.yy",},},
