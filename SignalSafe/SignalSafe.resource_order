@@ -17,6 +17,10 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_parede","order":1,"path":"objects/obj_parede/obj_parede.yy",},
+    {"name":"spr_chao","order":8,"path":"sprites/spr_chao/spr_chao.yy",},
+    {"name":"spr_elevacao","order":9,"path":"sprites/spr_elevacao/spr_elevacao.yy",},
+    {"name":"spr_parede","order":11,"path":"sprites/spr_parede/spr_parede.yy",},
     {"name":"spr_player_andando_cima","order":1,"path":"sprites/spr_player_andando_cima/spr_player_andando_cima.yy",},
     {"name":"spr_player_andando_direita","order":2,"path":"sprites/spr_player_andando_direita/spr_player_andando_direita.yy",},
     {"name":"spr_player_andando_esquerda","order":3,"path":"sprites/spr_player_andando_esquerda/spr_player_andando_esquerda.yy",},
@@ -24,5 +28,8 @@
     {"name":"spr_player_parado_cima","order":5,"path":"sprites/spr_player_parado_cima/spr_player_parado_cima.yy",},
     {"name":"spr_player_parado_direita","order":6,"path":"sprites/spr_player_parado_direita/spr_player_parado_direita.yy",},
     {"name":"spr_player_parado_esquerda","order":7,"path":"sprites/spr_player_parado_esquerda/spr_player_parado_esquerda.yy",},
+    {"name":"spr_sombra","order":10,"path":"sprites/spr_sombra/spr_sombra.yy",},
+    {"name":"tile_elevacao","order":1,"path":"tilesets/tile_elevacao/tile_elevacao.yy",},
+    {"name":"tile_sombra_elevacao","order":2,"path":"tilesets/tile_sombra_elevacao/tile_sombra_elevacao.yy",},
   ],
 }
