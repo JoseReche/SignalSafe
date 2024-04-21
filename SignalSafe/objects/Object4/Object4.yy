@@ -1,11 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_player",
+  "%Name":"Object4",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_player",
+  "name":"Object4",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -28,10 +29,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"spr_player_parado_baixo",
-    "path":"sprites/spr_player_parado_baixo/spr_player_parado_baixo.yy",
+    "name":"spr_carro_azul_parado_direita",
+    "path":"sprites/spr_carro_azul_parado_direita/spr_carro_azul_parado_direita.yy",
   },
   "spriteMaskId":null,
   "visible":true,
