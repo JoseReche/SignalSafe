@@ -3,7 +3,7 @@
 
 if( x <= 1226){
 	if(instance_exists(obj_player)){
-		if(obj_player.x >= x + 50 && obj_player.x <= x + 400){
+		if(obj_player.x >= x && obj_player.x <= x + 200){
 			sprite_index = spr_carro_azul_parado_direita
 		}else{
 			sprite_index = spr_carro_azul_andando_direita

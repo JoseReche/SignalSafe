@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_carro_azul_andando_direita",
-    "path":"sprites/spr_carro_azul_andando_direita/spr_carro_azul_andando_direita.yy",
+    "name":"spr_carro_azul_parado_direita",
+    "path":"sprites/spr_carro_azul_parado_direita/spr_carro_azul_parado_direita.yy",
   },
   "spriteMaskId":null,
   "visible":true,
