@@ -40,7 +40,6 @@
     {"name":"spr_player_parado_direita","order":6,"path":"sprites/spr_player_parado_direita/spr_player_parado_direita.yy",},
     {"name":"spr_player_parado_esquerda","order":7,"path":"sprites/spr_player_parado_esquerda/spr_player_parado_esquerda.yy",},
     {"name":"spr_sinalizacao","order":1,"path":"sprites/spr_sinalizacao/spr_sinalizacao.yy",},
-    {"name":"spr_sombra","order":10,"path":"sprites/spr_sombra/spr_sombra.yy",},
     {"name":"tile_luzes","order":1,"path":"tilesets/tile_luzes/tile_luzes.yy",},
   ],
 }

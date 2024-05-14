@@ -61,7 +61,6 @@
     {"id":{"name":"spr_player_parado_direita","path":"sprites/spr_player_parado_direita/spr_player_parado_direita.yy",},},
     {"id":{"name":"spr_player_parado_esquerda","path":"sprites/spr_player_parado_esquerda/spr_player_parado_esquerda.yy",},},
     {"id":{"name":"spr_sinalizacao","path":"sprites/spr_sinalizacao/spr_sinalizacao.yy",},},
-    {"id":{"name":"spr_sombra","path":"sprites/spr_sombra/spr_sombra.yy",},},
     {"id":{"name":"tie_cenario","path":"tilesets/tie_cenario/tie_cenario.yy",},},
     {"id":{"name":"tile_luzes","path":"tilesets/tile_luzes/tile_luzes.yy",},},
   ],
