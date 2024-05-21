@@ -1,9 +1,9 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-if( x <= 1226){
+if( x <= 2000||x >= -200){
 	if(instance_exists(obj_player)){
-		if(obj_player.x >= x && obj_player.x <= x + 200){
+		if(place_meeting(x + 50, y + 10, obj_player)||place_meeting(x + 50, y - 10, obj_player) || place_meeting(x + 50, y - 10, obj_carro)){
 			sprite_index = spr_carro_azul_parado_direita
 		}else{
 			sprite_index = spr_carro_azul_andando_direita
