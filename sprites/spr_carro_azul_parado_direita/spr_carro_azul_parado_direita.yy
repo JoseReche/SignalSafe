@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Veiculos",
-    "path":"folders/Sprites/Veiculos.yy",
+    "name":"Azul",
+    "path":"folders/Sprites/Veiculos/Parados/Azul.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
