@@ -1,3 +1,5 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
-speed = 3;
+if(temp){
+	obj_carro.speed = 0;
+}

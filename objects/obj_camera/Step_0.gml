@@ -28,14 +28,12 @@ camera_set_view_pos(view_camera[0],_cam_x,_cam_y);
 if(alarm[0] < 0){
 	instance_create_layer(-128,2054,"Carros",obj_carro);
 	alarm[0] = choose(200,300,500,400);
-	obj_carro.carro = 1;
 }
 
 //incerindo os carros da Direita
-if(alarm[1] < 0){
+/*if(alarm[1] < 0){
 	instance_create_layer(1408,1938,"Carros",obj_carro,{
 	image_xscale:-1,
 	direction:180});
 	alarm[1] = choose(200,300,500,400);
-	obj_carro.carro = 2;
-}
+}*/
