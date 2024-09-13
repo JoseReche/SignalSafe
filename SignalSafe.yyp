@@ -37,7 +37,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.0.137",
+    "IDEVersion":"2024.2.0.132",
   },
   "name":"SignalSafe",
   "resources":[
@@ -45,6 +45,7 @@
     {"id":{"name":"obj_carro","path":"objects/obj_carro/obj_carro.yy",},},
     {"id":{"name":"obj_parede","path":"objects/obj_parede/obj_parede.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"Object5","path":"objects/Object5/Object5.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"cenarioCompleto","path":"sprites/cenarioCompleto/cenarioCompleto.yy",},},
     {"id":{"name":"spr_carro_azul_andando_baixo","path":"sprites/spr_carro_azul_andando_baixo/spr_carro_azul_andando_baixo.yy",},},

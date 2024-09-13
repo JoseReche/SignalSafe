@@ -27,6 +27,7 @@
     {"name":"obj_camera","order":2,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"obj_carro","order":3,"path":"objects/obj_carro/obj_carro.yy",},
     {"name":"obj_parede","order":1,"path":"objects/obj_parede/obj_parede.yy",},
+    {"name":"Object5","order":4,"path":"objects/Object5/Object5.yy",},
     {"name":"cenarioCompleto","order":3,"path":"sprites/cenarioCompleto/cenarioCompleto.yy",},
     {"name":"spr_carro_azul_andando_cima","order":1,"path":"sprites/spr_carro_azul_andando_cima/spr_carro_azul_andando_cima.yy",},
     {"name":"spr_carro_azul_andando_direita","order":2,"path":"sprites/spr_carro_azul_andando_direita/spr_carro_azul_andando_direita.yy",},

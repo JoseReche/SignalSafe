@@ -28,7 +28,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
     "name":"spr_player_parado_baixo",
     "path":"sprites/spr_player_parado_baixo/spr_player_parado_baixo.yy",
