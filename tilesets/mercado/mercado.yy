@@ -1,16 +1,19 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"TileSet3",
+  "%Name":"mercado",
   "autoTileSets":[],
   "macroPageTiles":{
-    "SerialiseHeight":0,
-    "SerialiseWidth":0,
-    "TileSerialiseData":[],
+    "SerialiseHeight":4,
+    "SerialiseWidth":9,
+    "TileCompressedData":[
+      4,0,4,1,2,-6,0,3,16,17,18,-6,0,3,32,51,268435475,-6,0,3,48,67,50,-5,0,
+    ],
+    "TileDataFormat":1,
   },
-  "name":"TileSet3",
-  "out_columns":709,
-  "out_tilehborder":2,
-  "out_tilevborder":2,
+  "name":"mercado",
+  "out_columns":38,
+  "out_tilehborder":0,
+  "out_tilevborder":0,
   "parent":{
     "name":"Conjuntos de tiles",
     "path":"folders/Conjuntos de tiles.yy",
@@ -18,8 +21,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"cenarioCompleto",
-    "path":"sprites/cenarioCompleto/cenarioCompleto.yy",
+    "name":"Interiors_free_48x48",
+    "path":"sprites/Interiors_free_48x48/Interiors_free_48x48.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -28,11 +31,11 @@
   },
   "tileAnimationFrames":[],
   "tileAnimationSpeed":15.0,
-  "tileHeight":16,
+  "tileHeight":48,
   "tilehsep":0,
   "tilevsep":0,
-  "tileWidth":16,
+  "tileWidth":48,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":502128,
+  "tile_count":1424,
 }
