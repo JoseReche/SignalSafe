@@ -5,7 +5,7 @@
   "macroPageTiles":{
     "SerialiseHeight":29,
     "SerialiseWidth":20,
-    "TileCompressedData":[-496,0,-4,1,-16,0,-4,1,-16,0,-4,1,-16,0,-4,1,-20,0,],
+    "TileCompressedData":[-61,0,1,190,-434,0,-4,1,-16,0,-4,1,-16,0,-4,1,-16,0,-4,1,-20,0,],
     "TileDataFormat":1,
   },
   "name":"tile_casa",
