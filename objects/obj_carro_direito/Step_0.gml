@@ -1,5 +1,4 @@
-/// Step Event obj_carro_direito
-
+ /// Step Event obj_carro_direito
 // Pega a instância do player mais próxima
 var player = instance_nearest(x, y, obj_player);
 
@@ -12,7 +11,6 @@ if (!global.jogoPausado) {
 
             // Se carro não for bom (você usa isso pra algo?)
             if (!carroBom) {
-
                 // Se tem outro carro na frente, para
                 if (place_meeting(x + 50, y - 10, obj_carro_direito)) {
                     sprite_index = spr_carro_azul_parado_direita;
@@ -27,9 +25,15 @@ if (!global.jogoPausado) {
 				}else if (!global.passareala&&(place_meeting(x + 50, y+2 , obj_player) || place_meeting(x + 50, y-2, obj_player))) {
                     sprite_index = spr_carro_azul_parado_direita_alerta;
 					speed = 0;
-					player.mover_para_calcada = true;
-					
-                // Caso contrário anda normalmente
+					player.mover_para_calcada = true;	
+					if(!audio_is_playing(Busina))audio_play_sound(Busina, 1, false);
+					if(alarm[1]<=0&&global.ambiente>0){
+						global.hotbar_spr[global.ambiente] = 0
+						global.ambiente--
+						alarm[1]=200
+					}else if(global.ambiente==0){
+						global.hotbar_spr[0] = 1
+					}
                 } else {
                     sprite_index = spr_carro_azul_andando_direita;
                     speed = velocidade;
@@ -38,7 +42,7 @@ if (!global.jogoPausado) {
             } else { // Se carroBom == true
 
                 // Se tem carro na frente, para
-				if (place_meeting(x + 50, y - 10, obj_carro_direito)) {
+                if (place_meeting(x + 50, y - 10, obj_carro_direito)) {
                     sprite_index = spr_carro_azul_parado_direita;
                     speed = 0;
 
@@ -54,10 +58,37 @@ if (!global.jogoPausado) {
                     speed = velocidade;
 					if(!global.passareala &&(place_meeting(x+10,y-10,obj_player)||place_meeting(x-10,y+10,obj_player))){		
 						player.mover_para_calcada = true;
+						if(!audio_is_playing(Busina))audio_play_sound(Busina, 1, false);
+						if(alarm[1]<=0&&global.ambiente>0){
+							global.hotbar_spr[global.ambiente] = 0
+							global.ambiente--
+							alarm[1]=200
+						}else if(global.ambiente==0){
+							global.hotbar_spr[0] = 1
+						}
 					}
 				} else if (!global.passareala&&((place_meeting(x+50, y, obj_faixa)&&global.playerFaixa))) {
 					sprite_index = spr_carro_azul_parado_direita_alerta;
                     speed = 0;
+                } else if (place_meeting(x, y, obj_faixa)){
+					sprite_index = spr_carro_azul_andando_direita;
+                    speed = velocidade;
+					if(place_meeting(x+10,y-10,obj_player)||place_meeting(x-10,y+10,obj_player)){
+						player.mover_para_calcada = true;
+						if(!audio_is_playing(Busina))audio_play_sound(Busina, 1, false);
+						if(alarm[1]<=0&&global.ambiente>0){
+							global.hotbar_spr[global.ambiente] = 0
+							global.ambiente--
+							alarm[1]=200
+						}else if(global.ambiente==0){
+							global.hotbar_spr[0] = 1
+						}
+					}
+				} else if (place_meeting(x+50, y, obj_faixa)&&global.playerFaixa ) {
+					sprite_index = spr_carro_azul_parado_direita_alerta;
+                    speed = 0;
+
+                // Se o player está na faixa, para o carro
                  } else {
                     sprite_index = spr_carro_azul_andando_direita;
                     speed = velocidade;
@@ -66,7 +97,6 @@ if (!global.jogoPausado) {
             }
 
         }
-
     } else {
         instance_destroy();
     }

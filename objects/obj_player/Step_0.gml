@@ -1,5 +1,5 @@
 // Define a velocidade de movimento do jogador
-var moveSpeed = 4;
+var moveSpeed = 3;
 var _parede1 = instance_place(x+5, y+5, obj_parede);
 var _parede2 = instance_place(x-5, y-5, obj_parede);
 var _parede = true;
@@ -13,7 +13,7 @@ if (_parede2 != noone && _parede2.passagem == false) {
 
 // Movimento automático para calçada
 if (mover_para_calcada&&!global.passareala) {
-	
+    
     // Move em direção à calçada
     if (calcada_destino != noone) {
         var dx = calcada_destino.x - x;
@@ -32,53 +32,66 @@ if (mover_para_calcada&&!global.passareala) {
             sprite_index = my > 0 ? spr_player_andando_baixo : spr_player_andando_cima;
         }
     }
-
-} else if (!global.dialogoPausado) {
+} else if (global.mover) {
     
     // Movimento manual normal
     if (keyboard_check(ord("W"))) {
         y -= moveSpeed;
         sprite_index = spr_player_andando_cima;
-
+		 if (place_meeting(x,y,obj_parede) && _parede == true){
+	            y += moveSpeed;
+	        }
         if(!global.passareala&&(place_meeting(x,y,obj_carro_direito) || place_meeting(x,y,obj_carro_esquerdo))){
 			y += moveSpeed;
-        }
-        if (place_meeting(x,y,obj_parede) && _parede == true){
-            y += moveSpeed;
-        }
-
+	        if(place_meeting(x,y,obj_carro_direito) || place_meeting(x,y,obj_carro_esquerdo)){
+	            y += moveSpeed;
+	        }
+		}
+		
     } else if (keyboard_check(ord("S"))) {
         y += moveSpeed;
         sprite_index = spr_player_andando_baixo;
-
+		if (place_meeting(x,y,obj_parede) && _parede == true){
+	            y -= moveSpeed;
+	        }
         if (!global.passareala&&(place_meeting(x,y,obj_carro_direito) || place_meeting(x,y,obj_carro_esquerdo))){
-            y -= moveSpeed;
-        }
-        if (place_meeting(x,y,obj_parede) && _parede == true){
-            y -= moveSpeed;
-        }
+
+	        if (place_meeting(x,y,obj_carro_direito) || place_meeting(x,y,obj_carro_esquerdo)){
+
+	            y -= moveSpeed;
+	        }
+	        
+		}
 
     } else if (keyboard_check(ord("A"))) {
         x -= moveSpeed;
         sprite_index = spr_player_andando_esquerda;
-
+		if (place_meeting(x,y,obj_parede) && _parede == true){
+	            x += moveSpeed;
+	        }
         if (!global.passareala&&(place_meeting(x,y,obj_carro_direito) || place_meeting(x,y,obj_carro_esquerdo))){
-            x += moveSpeed;
-        }
-        if (place_meeting(x,y,obj_parede) && _parede == true){
-            x += moveSpeed;
-        }
 
+	        if (place_meeting(x,y,obj_carro_direito) || place_meeting(x,y,obj_carro_esquerdo)){
+
+	            x += moveSpeed;
+	        }
+	        
+		}
     } else if (keyboard_check(ord("D"))) {
         x += moveSpeed;
         sprite_index = spr_player_andando_direita;
+		 if (place_meeting(x,y,obj_parede) && _parede == true){
+	            x -= moveSpeed;
+	        }
 
         if (!global.passareala&&(place_meeting(x,y,obj_carro_direito) || place_meeting(x,y,obj_carro_esquerdo))){
-            x -= moveSpeed;
-        }
-        if (place_meeting(x,y,obj_parede) && _parede == true){
-            x -= moveSpeed;
-        }
+
+	        if (place_meeting(x,y,obj_carro_direito) || place_meeting(x,y,obj_carro_esquerdo)){
+
+	            x -= moveSpeed;
+	        }
+	       
+		}
 
     } else {
         sprite_index = spr_player_parado_baixo;

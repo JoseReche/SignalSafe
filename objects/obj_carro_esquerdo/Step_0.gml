@@ -13,7 +13,7 @@ if (!global.jogoPausado) {
             if (!carroBom) {
 
                 // Se tem outro carro na frente, para
-                if (place_meeting(x - 60, y - 5, obj_carro_esquerdo)) {
+                if (place_meeting(x - 50, y - 5, obj_carro_esquerdo)) {
                     sprite_index = spr_carro_azul_parado_esquerda;
                     speed = 0;
 
@@ -28,6 +28,14 @@ if (!global.jogoPausado) {
                     sprite_index = spr_carro_azul_parado_esquerda_alerta;
                     speed = 0;
 					player.mover_para_calcada = true;
+					if(!audio_is_playing(Busina))audio_play_sound(Busina, 1, false);
+					if(alarm[1]<=0&&global.ambiente>0){
+						global.hotbar_spr[global.ambiente] = 0
+						global.ambiente--
+						alarm[1]=200
+					}else if(global.ambiente==0){
+						global.hotbar_spr[0] = 1
+					}
                 } else {
                     sprite_index = spr_carro_azul_andando_esquerda;
                     speed = velocidade;
@@ -35,7 +43,7 @@ if (!global.jogoPausado) {
 
             } else { // Se carroBom == true
                 // Se tem carro na frente, para
-               if (place_meeting(x - 50, y - 5, obj_carro_esquerdo)) {
+                if (place_meeting(x - 50, y - 10, obj_carro_esquerdo)) {
                     sprite_index = spr_carro_azul_parado_esquerda;
                     speed = 0;
 
@@ -51,10 +59,24 @@ if (!global.jogoPausado) {
                     speed = velocidade;
 					if(!global.passareala&&(place_meeting(x+10,y-10,obj_player)||place_meeting(x-10,y+10,obj_player))){
 						player.mover_para_calcada = true;
+						if(!audio_is_playing(Busina))audio_play_sound(Busina, 1, false);
+						if(alarm[1]<=0&&global.ambiente>0){
+							global.hotbar_spr[global.ambiente] = 0
+							global.ambiente--
+							alarm[1]=200
+						}else if(global.ambiente==0){
+							global.hotbar_spr[0] = 1
+						}
 					}
 				} else if (place_meeting(x-50, y, obj_faixa)&&global.playerFaixa &&!global.passareala) {
 					sprite_index = spr_carro_azul_parado_esquerda_alerta;
                     speed = 0; 
+                }else if (place_meeting(x-50, y, obj_faixa)&&global.playerFaixa ) {
+					sprite_index = spr_carro_azul_parado_esquerda_alerta;
+                    speed = 0; 
+					
+
+                // Se o player está na faixa, para o carro
                  } else {
                     sprite_index = spr_carro_azul_andando_esquerda;
                     speed = velocidade;

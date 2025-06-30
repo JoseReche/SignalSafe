@@ -3,7 +3,6 @@
   "%Name":"obj_caixa_mercado",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_caixa_mercado",
@@ -34,15 +33,17 @@
         "\"batata\"",
         "\"carne\"",
         "\"\"",
+        "\"abacaxi\"",
+        "\"tangerina\"",
       ],"multiselect":false,"name":"itens","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"sacola\"","varType":6,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite38",
-    "path":"sprites/Sprite38/Sprite38.yy",
+    "name":"spr_compras",
+    "path":"sprites/spr_compras/spr_compras.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

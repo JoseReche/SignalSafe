@@ -1,5 +1,5 @@
 /// @description Inserir descrição aqui
-
+if(!audio_is_playing(Fundo))audio_play_sound(Fundo,0, false);
 // verificando se o player existe
 if(instance_exists(obj_player)){
 	alvo = obj_player;
@@ -25,25 +25,35 @@ cam_y = clamp(_cam_y,0,room_height - _alt_camera);
 //alterando a posição da camera
 camera_set_view_pos(view_camera[0],cam_x,cam_y);
 
-if(keyboard_check(vk_numpad7)){
+if(keyboard_check(vk_numpad8)){
 	global.testey = global.testey -1
 	//obj_dialogo.tutorial_andar--
-}else if(keyboard_check(vk_numpad9)){
+}else if(keyboard_check(vk_numpad2)){
 	global.testey = global.testey +1
 	//obj_dialogo.tutorial_andar++
-}else if(keyboard_check(vk_numpad8)){
+}else if(keyboard_check(vk_numpad4)){
 	global.testex = global.testex -1
-}else if(keyboard_check(vk_numpad5)){
+}else if(keyboard_check(vk_numpad6)){
 	global.testex = global.testex +1
-}else if(keyboard_check(vk_numpad1)){
-	global.testeyy--
+}else if(keyboard_check(ord("I"))){
+	global.testeyy = global.testeyy -0.01
 	//obj_dialogo.tutorial_andar--
-}else if(keyboard_check(vk_numpad3)){
-	global.testeyy++
+}else if(keyboard_check(ord("M"))){
+	global.testeyy = global.testeyy +0.01
 	//obj_dialogo.tutorial_andar++
-}else if(keyboard_check(vk_numpad2)){
-	global.testexx--
-}else if(keyboard_check(vk_numpad0)){
-	global.testexx++
+}else if(keyboard_check(ord("J"))){
+	global.testexx = global.testexx -0.01
+}else if(keyboard_check(ord("L"))){
+	global.testexx = global.testexx +0.01
 }
 
+if(global.fala==""){
+	audio_stop_sound(Fala_guarda_1);
+	audio_stop_sound(segunda_fala_guarda_2);
+    audio_stop_sound(Primeira_fala_guarda_2);
+    audio_stop_sound(Primeira_fala_mae);
+    audio_stop_sound(Segunda_fala_mae);
+    audio_stop_sound(Primeira_fala_atendente);
+    audio_stop_sound(Segunda_fala_atendente);
+    
+}

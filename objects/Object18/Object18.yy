@@ -1,0 +1,54 @@
+{
+  "$GMObject":"",
+<<<<<<<< HEAD:objects/obj_guarda/obj_guarda.yy
+  "%Name":"obj_guarda",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
+  "managed":true,
+  "name":"obj_guarda",
+========
+  "%Name":"Object18",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
+  "managed":true,
+  "name":"Object18",
+>>>>>>>> 4162cb6b85ddc2bd41c62f353a3d3a273de8c998:objects/Object18/Object18.yy
+  "overriddenProperties":[],
+  "parent":{
+    "name":"Objetos",
+    "path":"folders/Objetos.yy",
+  },
+  "parentObjectId":null,
+  "persistent":false,
+  "physicsAngularDamping":0.1,
+  "physicsDensity":0.5,
+  "physicsFriction":0.2,
+  "physicsGroup":1,
+  "physicsKinematic":false,
+  "physicsLinearDamping":0.1,
+  "physicsObject":false,
+  "physicsRestitution":0.1,
+  "physicsSensor":false,
+  "physicsShape":1,
+  "physicsShapePoints":[],
+  "physicsStartAwake":true,
+  "properties":[],
+  "resourceType":"GMObject",
+  "resourceVersion":"2.0",
+  "solid":false,
+  "spriteId":{
+<<<<<<<< HEAD:objects/obj_guarda/obj_guarda.yy
+    "name":"spr_policial",
+    "path":"sprites/spr_policial/spr_policial.yy",
+========
+    "name":"Sprite84_1",
+    "path":"sprites/Sprite84_1/Sprite84_1.yy",
+>>>>>>>> 4162cb6b85ddc2bd41c62f353a3d3a273de8c998:objects/Object18/Object18.yy
+  },
+  "spriteMaskId":null,
+  "visible":true,
+}

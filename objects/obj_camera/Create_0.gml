@@ -7,8 +7,6 @@ cam_y = 0;
 _xx = 428
 _xxx = 428
 tecla=0
-hotbar = [spr_compras,spr_compras,spr_compras,spr_compras,spr_compras,spr_compras]
-hotbar_spr = [0,0,0,0,0,0]
 item = spr_vazia;
 inventario_on = false;
 x_invent = 746;
@@ -21,6 +19,9 @@ teclaIndex = 1
 playerx=0
 playery=0
 proximo = false
+tutorial = true
 alarm[0]=10;
 alarm[1]=20;
-instance_deactivate_layer("moedas_porta")
+alarm[3]=500;
+
+global.tempo_inicio = current_time;

@@ -2,8 +2,6 @@
 // Você pode escrever seu código neste editor
 parado = false
 valid_passagem = noone
-// Velocidade normal de movimento
-moveSpeed = 4;
 
 // Controle de movimento automático para calçada
 mover_para_calcada = false;      // Ativa quando o carro te "empurra" pra calçada
