@@ -8,7 +8,7 @@
 
 ## 🛠️ Instalação
 
-1. Acesse a aba **Releases** do repositório.
+1. Acesse a aba **Releases** do repositório. https://github.com/JoseReche/SignalSafe
 2. Baixe o arquivo `SignalSafe.exe`.
 3. Execute o arquivo no Windows (pode ser necessário permitir a execução se o SmartScreen alertar).
 4. Não é necessária instalação: o jogo é portátil e roda direto.
